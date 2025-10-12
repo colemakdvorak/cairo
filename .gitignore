@@ -1,3 +1,8 @@
+# Not the build dir or local settings. use git submodules for external dep
+build
+.vscode
+external
+
 # Prerequisites
 *.d
 
