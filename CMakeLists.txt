@@ -19,13 +19,18 @@ add_subdirectory(external/googletest)
 
 # Define the test executable
 add_executable(test_shuffle_price tests/test_shuffle_price.cpp)
+add_executable(test_shuffle_bar tests/test_shuffle_bar.cpp)
 
 # Link test with your project library and gtest
 target_link_libraries(test_shuffle_price PRIVATE cairo_lib gtest gtest_main)
+target_link_libraries(test_shuffle_bar PRIVATE cairo_lib gtest gtest_main)
 
 # Make sure tests can include project headers
 target_include_directories(test_shuffle_price PRIVATE include)
+target_include_directories(test_shuffle_bar PRIVATE include)
 
 # Enable testing
 enable_testing()
 add_test(NAME ShufflePriceTest COMMAND test_shuffle_price)
+add_test(NAME ShuffleBarTest COMMAND test_shuffle_bar)
+
