@@ -1,3 +1,5 @@
+#ifndef SHUFFLE_PRICE_H
+#define SHUFFLE_PRICE_H
 class ShufflePrice {
 public:
     ShufflePrice(int T, int N, int S, double **output_buffer, bool init, int seed);
@@ -12,5 +14,7 @@ private:
     int seed; // randomization seed
     double *basis; // Initial vector of asset prices at time pivot
     double **input_data; // N X T time series data
-    double **delta; // 
+    double **delta; // change buffer
 };
+
+#endif // SHUFFLE_PRICE_H
