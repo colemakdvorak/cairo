@@ -6,7 +6,8 @@ I am interested in finding out how many of these strategies can survive this mor
 
 * 🎲 Monte‑Carlo Permutation Testing implementation
   * [x] transaction data shuffling
-  * [ ] bar data shuffling
+  * [x] bar data shuffling
+  * [ ] intraday pattern shuffling
 
 * 🧠 Others
   * [ ] bootstraping
